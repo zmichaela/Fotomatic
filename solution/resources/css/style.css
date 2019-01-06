@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -53,9 +53,6 @@ header .content {
 
 header .logo {
   flex: 1;
-  font-size: 2rem;
-  font-style: bold;
-  color: #4a4a4a
 }
 
 header nav ul {
@@ -79,11 +76,6 @@ header .icon {
 }
 
 header .mobile {
-  display: none;
-}
-
-a .button
-{
   display: none;
 }
 
@@ -127,10 +119,10 @@ a .button
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url("../resources/images/banner-landingpage.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('../images/banner-landingpage.jpg');
   background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #sign-up-cta {
@@ -144,7 +136,7 @@ a .button
 }
 
 #sign-up-cta .content {
-  width: 28rem;
+  width: 25.625rem;
   margin-top: 2rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -160,27 +152,20 @@ a .button
   font-size: 2.25rem;
 }
 
-
 #sign-up-cta span strong {
   font-weight: bold;
 }
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
-  padding-top: 32px;
 }
 
 #sign-up-cta .striking {
-  font-size: 50px;
-  font-family: "Rubik-Regular", sans-serif;
-  line-height: 1.4rem;
-  padding-top: 1rem;
+  font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
-
 }
 
 #sign-up-cta .button {
-  font-size: 20px;
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
 }
@@ -243,11 +228,11 @@ a .button
 .feature {
   flex: 1;
   padding: 2rem;
-  margin: 0 1.25rem;
+  margin: 0px 1.25rem;
   background-color: white;
 }
 
-.feature .image-container img {
+.feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
@@ -262,7 +247,6 @@ a .button
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
-  line-height: 1.2;
 }
 
 .feature h3 {
@@ -295,16 +279,21 @@ a .button
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
+  .feature .content {
+    padding: 1.25rem 0 1.875rem 0;
+  }
 }
 
 /* Filters Section */
+
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
 }
 
 #filters-section .content {
-  padding: 0 .625rem 5 .625rem;
+  padding: 0 .625rem;
   margin-bottom: 5rem;
 }
 
@@ -381,7 +370,7 @@ a .button
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
@@ -414,7 +403,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
   footer .content {
     font-size: .625rem;
   }
